@@ -1,0 +1,339 @@
+html, body, .container {
+    background-color:#FFFFFF;
+    font-family: 'IBM Plex Mono',sans-serif,-apple-system !important;
+}
+
+footer {
+    user-select: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .HeadLine {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #bach, #assoc, #diploma, #Teach, #CSA, #SA {
+        display: block !important;
+    }
+
+    .big {
+        display: none;
+    }
+    
+    .custom-hr {
+        max-width: 50%;
+        margin: 40px auto;
+        text-align: center;
+        .hr-line {
+          position: relative;
+          border: 0;
+          height: 1em;
+          &:before {
+            content: '';
+            background: linear-gradient(to right, white, black, white);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+          }
+        }
+    }
+    
+    .small {
+        text-align: center;
+    }
+
+    h5, h6 {
+        text-align: center;
+    }
+
+    .AboutMe .para {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .small {
+        display: none;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 600px) {
+    html, body {
+        /* background-color: white;
+        color: black; */
+        
+    }
+
+    .small {
+        display: none;
+    }
+
+    h5 {
+        text-decoration: underline;
+    }
+}
+
+  
+  .wrapper {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a {
+    padding: 0px 10px;
+  }
+  
+  .wrapper a:nth-child(1) {
+    color: #1DA1F2;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+  }
+  
+  .wrapper a:nth-child(1):hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+  }
+  
+  .wrapper a:nth-child(2) {
+    color: #444;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+  }
+  
+  .wrapper a:nth-child(2):hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+  }
+  
+  .wrapper a:nth-child(3) {
+    color: #fffc00;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 150ms;
+  }
+  
+  .wrapper a:nth-child(3):hover {
+    margin-top: -10px;
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    transform: translate(0, -5);
+  }
+  .wrapper a:nth-child(4) {
+    color: red;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+  }
+  .wrapper a:nth-child(4):hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+  }
+
+
+
+
+
+
+
+
+
+
+/* Variables */
+:root {
+    /* Animation speed */
+    --animation-speed: .3s;
+    
+    /* Light-mode colors */
+    --light-font-color: black;
+    --light-bg-color: #fff;
+    --light-black: black;
+  
+    /* Dark-mode colors */
+    --dark-font-color: #ffffffff;
+    --dark-bg-color: black;
+    --dark-black: black;
+  
+    /* Color variables */
+    --font-color: var(--light-font-color);
+    --bg-color: var(--light-bg-color);
+    --black: var(--light-black);
+  }
+  
+  #dark-mode-checkbox ~ .container {
+    /* Set light mode variables */
+    --font-color: var(--light-font-color);
+    --bg-color: var(--light-bg-color);
+    --black: var(--light-black);
+  }
+  
+  #dark-mode-checkbox:checked ~ .container {
+    /* Set dark mode variables */
+    --font-color: var(--dark-font-color);
+    --bg-color: var(--dark-bg-color);
+    --black: var(--dark-black);
+  }
+  
+  .theme-switch-wrapper {
+    width: 22px;
+    height: 22px;
+    margin: auto;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 22px;
+    position: relative;
+    width: 22px;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: var(--black);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotateZ(-225deg);
+    transition: var(--animation-speed) all;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 2px;
+    content: '';
+    height: 18px;
+    left: 2px;
+    position: absolute;
+    transition: 0.3s;
+    width: 18px;
+  }
+  
+  #dark-mode-checkbox:checked
+    ~ .container
+    > .theme-switch-wrapper
+    > .theme-switch
+    > .slider {
+    background-color: var(--font-color);
+    transform: rotateZ(-45deg);
+  }
+  
+  #dark-mode-checkbox:checked
+    ~ .container
+    > .theme-switch-wrapper
+    > .theme-switch
+    > .slider:before {
+    background-color: var(--bg-color);
+    transform: translateX(10px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  #dark-mode-checkbox:checked
+    ~ .container
+    > .theme-switch-wrapper
+    > .theme-switch
+    > .slider
+    > .sun-ray-1 {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  
+  #dark-mode-checkbox:checked
+    ~ .container
+    > .theme-switch-wrapper
+    > .theme-switch
+    > .slider
+    > .sun-ray-1
+    + .sun-ray-2 {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  
+  .sun-ray-1,
+  .sun-ray-2 {
+    transition: var(--animation-speed) all;
+  }
+  
+  .sun-ray-1:before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    height: 2px;
+    width: 4px;
+    background-color: var(--black);
+  }
+  
+  .sun-ray-1:after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 10px;
+    height: 2px;
+    width: 4px;
+    background-color: var(--black);
+  }
+  
+  .sun-ray-2:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -8px;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 2px;
+    background-color: var(--black);
+  }
+  
+  .sun-ray-2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 26px;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 2px;
+    background-color: var(--black);
+  }
+  
+  .container {
+    background-color: var(--bg-color);
+    transition: var(--animation-speed) all;
+  }
+
+
+#dark-mode-checkbox {
+    display: none;
+    user-select: none;
+}
+
+
+#project {
+    color: inherit;
+    background-color: inherit;
+}
