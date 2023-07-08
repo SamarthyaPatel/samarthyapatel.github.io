@@ -3,6 +3,13 @@ html, body, .container {
     font-family: 'IBM Plex Mono',sans-serif,-apple-system !important;
 }
 
+h1 {
+  text-decoration: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
 footer {
     user-select: none;
 }
@@ -66,9 +73,6 @@ footer {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 600px) {
     html, body {
-        /* background-color: white;
-        color: black; */
-        
     }
 
     .small {
@@ -173,14 +177,14 @@ footer {
     --black: var(--light-black);
   }
   
-  #dark-mode-checkbox ~ .container {
+  #dark-mode-checkbox ~ .themebox {
     /* Set light mode variables */
     --font-color: var(--light-font-color);
     --bg-color: var(--light-bg-color);
     --black: var(--light-black);
   }
   
-  #dark-mode-checkbox:checked ~ .container {
+  #dark-mode-checkbox:checked ~ .themebox {
     /* Set dark mode variables */
     --font-color: var(--dark-font-color);
     --bg-color: var(--dark-bg-color);
@@ -228,7 +232,7 @@ footer {
   }
   
   #dark-mode-checkbox:checked
-    ~ .container
+    ~ .themebox
     > .theme-switch-wrapper
     > .theme-switch
     > .slider {
@@ -237,7 +241,7 @@ footer {
   }
   
   #dark-mode-checkbox:checked
-    ~ .container
+    ~ .themebox
     > .theme-switch-wrapper
     > .theme-switch
     > .slider:before {
@@ -254,7 +258,7 @@ footer {
   }
   
   #dark-mode-checkbox:checked
-    ~ .container
+    ~ .themebox
     > .theme-switch-wrapper
     > .theme-switch
     > .slider
@@ -264,7 +268,7 @@ footer {
   }
   
   #dark-mode-checkbox:checked
-    ~ .container
+    ~ .themebox
     > .theme-switch-wrapper
     > .theme-switch
     > .slider
@@ -321,9 +325,9 @@ footer {
     background-color: var(--black);
   }
   
-  .container {
+  .themebox {
     background-color: var(--bg-color);
-    transition: var(--animation-speed) all;
+    /* transition: var(--animation-speed) all; */
   }
 
 

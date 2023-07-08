@@ -8,15 +8,6 @@ function startTime() {
     setTimeout(startTime, 1000);
 }
 
-// if (toggle.checked) {
-//     alert("Checked")
-//     console.log("checked")
-//     // document.getElementsByTagName("body")[0].style = 'background-color: black';
-// } else {
-//     // document.getElementsByTagName("body")[0].style = 'background-color: white';
-// }
-
-
 
 window.addEventListener("DOMContentLoaded", (event) => {
     const toggle = document.getElementById("dark-mode-checkbox");
@@ -26,7 +17,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
             document.getElementsByTagName("body")[0].style = 'background-color: black; color: white;'
             document.getElementsByClassName("github")[0].style = 'color: #FDF4DC;'
             document.getElementsByClassName("github1")[0].style = 'color: #FDF4DC;'
-            document.getElementsByTagName("h5")[1].style = 'color:  #04d9ff';
             const uni = document.getElementsByTagName("h5")
             console.log(uni)
             for(let i = 0; i < uni.length; i ++) {
