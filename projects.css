@@ -1,0 +1,134 @@
+@media only screen and (max-width: 699px) {
+  .projects {
+    display: grid;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+  }
+
+  .project {
+    align-self: center;
+    margin-bottom:2em;
+  }
+
+  .project img {
+    width: 20rem;
+  }
+
+  .big {
+    display: none;
+  }
+  
+  .title {
+    position: relative;
+    text-align: center;
+    top: -200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 2.5em;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+  }
+
+  img {
+    border-radius: 5px !important;
+  }
+
+  .coming-soon {
+    position: relative !important;
+    top: -200px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+  .projects {
+    margin: auto;
+    display: grid;
+    width: inherit;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .project {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .project img {
+    width: calc(80vw - 50vw);
+    margin: auto;
+  }
+
+  .big {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+  .small {
+    display: none;
+  }
+
+  .projects {
+    margin: auto;
+    display: grid;
+    width: inherit;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .project {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .project img {
+    width: 300px;
+  }
+
+  .cover {
+    overflow: hidden;
+    transition: all ease-in-out 150ms;
+  }
+  
+  img {
+    transition: all ease-in-out 150ms;
+  }
+  
+  
+  .cover:hover {
+    border-radius: 1rem;
+    transition: all ease-in-out 150ms;
+    opacity: 0.2;
+    cursor: pointer;
+  }
+  
+  .cover:hover > img {
+    transition: all ease-in-out 150ms;
+    transform: scale(1.1);
+  }
+  
+  .title {
+    position: absolute;
+    margin-top: 120px;
+    font-size: 1.2em;
+    transition: all ease-in-out 150ms;
+    opacity: 0;
+  }
+  
+  .cover:hover + .title {
+    opacity: 1;
+    transition: all ease-in-out 150ms;
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+.card {
+  border-width: 0px !important;
+}

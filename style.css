@@ -3,6 +3,7 @@ html, body, .container {
     font-family: 'IBM Plex Mono',sans-serif,-apple-system !important;
 }
 
+
 h1 {
   text-decoration: none;
   user-select: none;
@@ -72,8 +73,6 @@ footer {
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 600px) {
-    html, body {
-    }
 
     .small {
         display: none;
@@ -153,9 +152,6 @@ footer {
 
 
 
-
-
-
 /* Variables */
 :root {
     /* Animation speed */
@@ -175,6 +171,9 @@ footer {
     --font-color: var(--light-font-color);
     --bg-color: var(--light-bg-color);
     --black: var(--light-black);
+
+    --b:  black;
+    --c: white;
   }
   
   #dark-mode-checkbox ~ .themebox {
@@ -340,4 +339,47 @@ footer {
 #project {
     color: inherit;
     background-color: inherit;
+}
+
+a:link, a:visited, a:hover {
+  color: black;
+}
+
+
+
+
+
+#projects-link {
+  text-decoration: none;
+  box-shadow: 0 0 0 .1em inset var(--b); 
+  --_g: linear-gradient(var(--b) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+#projects-link:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+  color: var(--c) !important;
+}
+#projects-link:active {
+  box-shadow: 0 0 9e9q inset var(--b); 
+  background-color: var(--b);
+  color: var(--c) !important;
+}
+
+#projects-link {
+  cursor: pointer;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  border: none;
+  font-weight: bold;
+  color: var(--b) !important;
 }
