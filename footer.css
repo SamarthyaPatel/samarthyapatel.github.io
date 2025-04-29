@@ -1,0 +1,205 @@
+#footer-section a, #footer-section i, #footer-section a:visited, #footer-section a:hover {
+    cursor: none;
+    color: var(--secondary-color);
+}
+
+#footer-section {
+    width: 100vw;
+    height: 50vh;
+    background: var(--primary-color);
+    bottom: 0px;
+    position: fixed;
+    z-index: 0;
+    color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+#footer-section .top-container {
+    height: 43vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer-section .switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    aspect-ratio: 3 / 1.714;
+    /* height: min(2rem, 4vh); */
+}
+
+#footer-section .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#footer-section .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    transition: .5s;
+    border-radius: 30px;
+    border: 1px solid var(--secondary-color);
+    cursor: none;
+}
+
+#footer-section .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.199rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px var(--secondary-color);
+    background: var(--primary-color);
+    transition: .5s;
+}
+
+#footer-section input:checked + #footer-section .slider {
+    background-color: var(--primary-color);
+}
+
+#footer-section input:checked + #footer-section .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px var(--secondary-color);
+}
+
+
+@media (orientation: landscape) {
+    .small {
+        display: none;
+    }
+
+    .banner-container {
+        display: none;
+    }
+
+    #footer-section .big {
+        margin: 0px 10vw;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0px;
+        border-top: .5px solid #454545;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .smg-regular .city {
+        width: 3.5em;
+    }
+
+    #name-banner {
+        width: 70%;
+        height: auto;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        pointer-events: none;
+    }
+
+    .social-tray {
+        width: 50vw;
+        height: auto;
+        margin: 0px 25vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer-section .fa {
+        margin: 0px .5rem;
+        font-size: min(2rem, 4vh);
+    }
+
+    #footer-section h6 {
+        margin: 2vh 0px;
+        font-size: 1.1rem;
+        line-height: 3vh;
+        font-weight: lighter;
+    }
+
+}
+
+@media (orientation: portrait) {
+
+    #footer-section .top-container {
+        height: 43vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    .big {
+        display: none;
+    }
+
+    #name-banner {
+        display: none;
+    }
+
+    #footer-section .banner-container {
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mobile-name-banner1, #mobile-name-banner2 {
+        width: auto;
+        margin: auto;
+        height: 4.5vh;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        pointer-events: none;
+    }
+
+    #mobile-name-banner1 {
+        margin-bottom: 2vh;
+    }
+
+    #footer-section .social-tray {
+        width: 50vw;
+        height: auto;
+        margin: 0px auto;
+        margin-top: 7vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer-section .small {
+        margin: 0px 10vw;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0px;
+        border-top: .5px solid #454545;
+    }
+
+    #footer-section .fa {
+        margin: 0px .5rem;
+        font-size: min(2rem, 4vh);
+    }
+
+    #footer-section h6 {
+        margin: 2vh 0px;
+        font-size: 1rem;
+        line-height: 3vh;
+        font-weight: lighter;
+    }
+}

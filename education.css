@@ -1,0 +1,147 @@
+#Education {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.education-content {
+    display: flex;
+    column-gap: 5vh;
+    justify-content: center;
+}
+
+.degree-cert {
+    width: 15vw;
+    aspect-ratio: 1 / 1.414;
+    background-color: var(--secondary-color);
+    position: relative;
+    text-align: center;
+}
+
+.dc-light-shadow {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.dc-dark-shadow {
+    box-shadow: 0px 0px 5px 0px white;
+    -webkit-box-shadow: 0px 0px 5px 0px white;
+    -moz-box-shadow: 0px 0px 5px 0px white;
+}
+
+.degree-cert img {
+    margin-top: 1vw;
+    width: auto;
+    height: 6vw; 
+    /* filter: grayscale(100%); */
+}
+
+.degree-name, .degree-institute {
+    width: 13vw;
+    margin: 0px auto;
+}
+
+.degree-name {
+    font-size: 1vw;
+}
+
+.degree-institute {
+    font-size: 0.8vw;
+}
+
+.degree-cert .fi {
+    width: 2vw;
+    height: 1.5vw;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: .8vw auto;
+}
+
+.degree-score {
+    width: 13vw;
+    margin: 1vw auto;
+    font-size: 1vw;
+}
+
+.degree-period {
+    font-variant: small-caps; 
+    color: var(--primary-color); 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 1rem; 
+    font-weight: bold; 
+    position:absolute; 
+    bottom: 1.5vw;
+    text-decoration: overline;
+    font-size: 1vw;
+}
+
+#edu-title {
+    display: none;
+}
+
+
+@media (orientation: portrait) {
+
+    #edu-title {
+        width: 80vw;
+        margin: auto;
+        display: block;
+        margin-bottom: 10vw;
+        font-size: 4vh;
+        line-height: 5vh;
+        font-variant: small-caps;
+        text-decoration: underline;
+    }
+    .education-content {
+        position: relative;
+        justify-content: start;
+        margin-left: 15vw;
+        column-gap: 10vw;
+    }
+
+    .degree-cert {
+        width: 70vw;
+    }
+
+    .degree-cert img {
+        margin-top: 5vw;
+        width: auto;
+        height: 30vw;
+    }
+
+    .degree-name, .degree-institute {
+        width: 70vw;
+        margin: 0px auto;
+    }
+
+    .degree-name {
+        font-size: 4.8vw;
+    }
+
+    .degree-institute {
+        font-size: 3.8vw;
+        font-variant: small-caps;
+    }
+
+    .degree-cert .fi {
+        width: 10vw;
+        height: 7.5vw;
+        margin: 4vw auto;
+    }
+
+    .degree-score {
+        width: 70vw;
+        margin: 5vw auto;
+        font-size: 4.5vw;
+    }
+
+    .degree-period {
+        margin-top: 1rem; 
+        font-weight: bold; 
+        position:absolute; 
+        bottom: 7.5vw;
+        text-decoration: overline;
+        font-size: 5vw;
+    }
+}

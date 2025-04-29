@@ -1,0 +1,52 @@
+{
+    "title": "Samarthya Patel",
+    "subtitle": "Ph.D. Candidate in Explainable A.I.",
+    "about_me": "Namaste, I am a GTA-PhD Candidate in Explainable Artificial Intelligence and a Senior Teaching Assistant at Swansea University, dedicated to advancing the field of AI through a focus on explainability and interpretability. My goal is to develop AI models that perform exceptionally well and provide clear, understandable insights into their decision-making processes. This work is crucial for building trust and accountability in AI applications across various industries. \n Outside academia, you will find me playing sports, exploring new places, or watching Anime.",
+    "education": [
+        { "name": "PhD Artificial Intelligence", "institute": "Swansea University", "score": "Ongoing", "period": "Jul 2024 - Jun 2028", "country": "fi fi-gb-wls" },
+        { "name": "BSc Computer Science", "institute": "Swansea University", "score": "First Class Honours", "period": "Sep 2020 - Jun 2023", "country": "fi fi-gb-wls" },
+        { "name": "Foundation Computing", "institute": "University of Hertfordshire", "score": "First Class Honours", "period": "Sep 2019 - Jun 2020", "country": "fi fi-gb-eng" },
+        { "name": "Dip Information Technology", "institute": "Thakur Polytechnic", "score": "Upper Second Class", "period": "Sep 2016 - Jun 2019", "country": "fi fi-in" }
+    ],
+    "projects": [
+        { "name": "XAI Comprehensive Guide", "summary": "A one-stop resource including a comprehensive survey, Poster, and Slide Presentation on eXplainable AI (XAI) developed for the PGR Conference 2025.", "result": "", "tools": "",
+        "cta": [
+            {"label": "Github", "logo": "fa fa-github-alt", "link": "https://github.com/SamarthyaPatel/XAI-Comprehensive-Guide/"}
+        ], 
+        "assets": [
+            {"image": "xai-guide", "label": ""}
+            ]
+        },
+        { "name": "CheckMate Decentralised Application", "summary": "My BSc Final Year Project", "result": "", "tools": "",
+        "cta": [
+            {"label": "Github", "logo": "fa fa-github-alt", "link": "https://github.com/SamarthyaPatel/CheckMate-Dapp"}
+        ], 
+        "assets": [
+            {"image": "checkmate-dapp", "label": ""}
+            ]
+        },
+        { "name": "Sorting Visualiser", "summary": "Personal Project focused on Sorting Visualiser for educational purpose", "result": "", "tools": "",
+        "cta": [
+            {"label": "Github", "logo": "fa fa-github-alt", "link": "https://github.com/SamarthyaPatel/Sorting-Visualiser"},
+            {"label": "Website", "logo": "fa fa-play-circle", "link": "https://samarthyapatel.github.io/Sorting-Visualiser"}
+        ],
+        "assets": [
+            {"image": "sorting-visualiser", "label": ""}
+            ]
+        }
+    ],
+    "experience": [
+        { "title": "Sr Teaching Assistant", "company": "Swansea University", "period": "Jul 2024 - Present", "mt": "0vw", "pmt": "0vw" },
+        { "title": "Developer", "company": "The Constant Media", "period": "Aug 2023 - Jun 2024", "mt": "0.72vw", "pmt": "2.88vw" },
+        { "title": "Teaching Assistant", "company": "Swansea University", "period": "Sep 2022 - Jun 2023", "mt": "0vw", "pmt": "0vw" }
+    ],
+    "interests": [
+        "Explainable Artificial Intelligence (XAI)", "Interpretable Machine Learning (IML)", "Causal Inference in AI"
+    ],
+    "social_platforms": [
+        { "icon": "fa fa-linkedin-square", "link": "https://www.linkedin.com/in/samarthyapatel" },
+        { "icon": "fa fa-github-square", "link": "https://github.com/SamarthyaPatel" },
+        { "icon": "fa fa-twitter-square", "link": "https://x.com/samarthyapatel" },
+        { "icon": "fa fa-envelope-square", "link": "mailto:samarthyapatel04@gmail.com" }
+    ]
+}
