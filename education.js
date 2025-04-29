@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 document.addEventListener('DOMContentLoaded', () => {
 
     let mm = gsap.matchMedia();
