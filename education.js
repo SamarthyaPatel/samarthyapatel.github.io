@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 document.addEventListener('DOMContentLoaded', () => {
 
     let mm = gsap.matchMedia();
@@ -13,24 +11,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // }); 
 
-    mm.add("(orientation: portrait)", () => {
-        const carousel = document.querySelector(".education-content");
+    // mm.add("(orientation: portrait)", () => {
+    //     const carousel = document.querySelector(".education-content");
 
-        console.log(carousel.scrollWidth, window.innerWidth)
+    //     console.log(carousel.scrollWidth, window.innerWidth)
 
-        // Pin the whole section instead of title separately
-        gsap.to(carousel, {
-            x: () => `-${(carousel.scrollWidth +50) - window.innerWidth}px`,
-            ease: "none",
-            scrollTrigger: {
-                trigger: "#Education",
-                start: "top 15%",
-                end: () => `+=${carousel.scrollWidth}`,
-                scrub: .5,
-                pin: true,
-                anticipatedPin: 1
-            }
-        });
-    });
+    //     // Pin the whole section instead of title separately
+    //     gsap.to(carousel, {
+    //         x: () => `-${(carousel.scrollWidth +50) - window.innerWidth}px`,
+    //         ease: "none",
+    //         scrollTrigger: {
+    //             trigger: "#Education",
+    //             start: "top 15%",
+    //             end: () => `+=${carousel.scrollWidth}`,
+    //             scrub: .5,
+    //             pin: true,
+    //             anticipatedPin: 1
+    //         }
+    //     });
+    // });
 
 });

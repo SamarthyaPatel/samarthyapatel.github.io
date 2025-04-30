@@ -95,10 +95,9 @@
     }
     .education-content {
         position: relative;
-        justify-content: start;
-        margin-left: 15vw;
-        column-gap: 10vw;
-        width: 325vw;
+        display: grid;
+        justify-content: center;
+        row-gap: 5vw;
     }
 
     .degree-cert {
