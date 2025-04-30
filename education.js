@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const carousel = document.querySelector(".education-content");
         
-        gsap.to("#edu-title", { scrollTrigger: {trigger: "#edu-title", start: "top 10%", end: "+=1000", pin: true, pinSpacing: false }  });
+        gsap.to("#edu-title", { scrollTrigger: {trigger: "#edu-title", start: "top 11%", end: "+=1000", pin: true, pinSpacing: false }  });
         gsap.to(carousel, {x: "-240vw", scrollTrigger: {trigger: carousel, start: "top 20.5%", end: "+=1000", scrub: .5, pin: true  } });
 
     }); 
